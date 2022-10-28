@@ -20,7 +20,6 @@ public class Server {
                 Thread thread = new HandleClient(connection, dataInputStream, dataOutputStream);
                 thread.start();
             }
-            serverSocket.close();
         } catch (Exception err) {
             System.err.println(err);
         }
